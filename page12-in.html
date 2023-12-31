@@ -16,8 +16,16 @@
         <!-- <h2>You heard some footsteps behind you. Before you could do anything, you felt very sharp pain on your shoulder. And it started bleeding.</h2> -->
 
 
-        <a href="ending-good.html">Continue</a>
+        <a href="ending-good.html" id="deadLink">Continue</a>
 
     </div>
+    <script>
+        setTimeout(function() {
+            // Get the link element by its ID
+            var link = document.getElementById('deadLink');
+            // Trigger the click event on the link to redirect
+            link.click();
+        }, 4000);
+    </script>
 </body>
 </html>
