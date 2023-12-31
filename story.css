@@ -1,0 +1,52 @@
+body,html{
+    background-color: #C0C0C0;
+}
+
+.sent{
+    margin-left: 17%;
+    margin-top: 9%;
+}
+
+.sender{
+    background-color: #98ff98;
+    border: 2px solid greenyellow;
+    width: 70%;
+    padding: 3%;
+    border-radius: 20px;
+    font-size: 113%;
+}
+
+.reply{
+    margin-top: 9%;
+    margin-left: 55%;
+}
+
+.you{
+    background-color: #98ff98;
+    border: 2px solid rgb(146, 243, 0);
+    width: 80%;
+    padding: 3%;
+    border-radius: 20px;
+    font-size: 113%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    border: 3px solid red;
+    border-radius: 10px;
+    font-size: 105%;
+    padding: 2%;
+}
+
+a:hover{
+    background-color: yellow;
+}
+
+p{
+    color: rgb(46, 45, 45);
+    font-size: 110%;
+}

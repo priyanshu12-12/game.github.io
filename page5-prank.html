@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="story.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // Set the timer duration in seconds
+        const duration = 300; // 5 minutes
+
+        // Function to start the countdown
+        function startTimer(duration, display) {
+            let timer = duration, minutes, seconds;
+            const intervalId = setInterval(function () {
+                minutes = parseInt(timer / 60, 10);
+                seconds = parseInt(timer % 60, 10);
+
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
+
+                display.textContent = minutes + ":" + seconds;
+
+                if (--timer < 0) {
+                    clearInterval(intervalId); // Stop the timer
+                    window.location.href = "page5-back.html"; // Redirect after timer ends
+                }
+            }, 1000);
+        }
+
+        // When the window loads
+        window.onload = function () {
+            const display = document.getElementById('timer');
+            startTimer(duration, display);
+        };
+    </script>
+</head>
+<body>
+    <div class="sent">
+        <p class="sender">This is not a prank. My life is in danger. I need help.</p>
+        <p class="sender">They are coming, will text you in a few minutes....</p>
+    </div>
+
+    <div class="reply">
+        <div id="timer"></div>
+    </div>
+</body>
+</html>
