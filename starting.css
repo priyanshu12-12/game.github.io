@@ -8,7 +8,7 @@ html,body{
 
 a {
     color: yellow;
-    font-size: 24px; /* Changed to pixels for better readability */
+    /* Changed to pixels for better readability */
     text-decoration: none;
     border: 2px solid yellow; /* Adding a border */
     padding: 10px 20px; /* Adding padding for better appearance */
