@@ -13,10 +13,20 @@
     </div>
 
     <div class="reply">
-
-        <h3>You heard some silent footsteps coming from your back and then felt a sharp pain on your neck. It was bleeding. IN the last, only darkness was something that you could see.</h3>
-        <a href="ending-dead.html">The End</a>
-
+        <h3>You heard some silent footsteps coming from your back and then felt a sharp pain on your neck. It was bleeding. In the last, only darkness was something that you could see.</h3>
+        <!-- Added an ID for the link -->
+        <a href="ending-dead.html" id="deadLink">The End</a>
     </div>
+
+    <!-- JavaScript to redirect after 5 seconds -->
+    <script>
+        // Wait for 5 seconds (5000 milliseconds) and then redirect
+        setTimeout(function() {
+            // Get the link element by its ID
+            var link = document.getElementById('deadLink');
+            // Trigger the click event on the link to redirect
+            link.click();
+        }, 5000);
+    </script>
 </body>
 </html>
